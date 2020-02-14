@@ -1,7 +1,12 @@
 public class Sudoku implements Cloneable {
     char[][] problem;
     int length;
-
+    
+    /**
+    * Sudokus must be entered from left to right, top to bottom
+    * @param the problem definition of the sudoku
+    * @param length the dimension of the problem
+    */
     public Sudoku(String problem, int length) {
         this.length = length;
         this.problem = new char[length][length];
